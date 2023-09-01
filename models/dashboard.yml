@@ -1,0 +1,15 @@
+version: 2
+
+exposures:
+  - name: Executive_Dashboard
+    type: dashboard
+    maturity: low
+    url: https://0d0fe930.us1a.app.preset.io/superset/dashboard/p/b3gwWm2P2jN/
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_listing_with_host')
+      - ref('mart_fullmoon_reviews')
+    owner:
+      name: Suman Dhakal
+      email: suman.dhakal@lftechnology.com
